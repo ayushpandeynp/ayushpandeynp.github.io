@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Pricedown";
+  src: url("/fonts/pricedown.otf") format("opentype");
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 4rem;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+button {
+  background: white;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 30px;
+  font-family: "Pricedown";
+}
+
+/* GTA Font */
+.gta-font {
+  font-family: "PriceDown", sans-serif;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#start_button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Chats */
+.chat-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.chat-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.chat-container .chat {
+  background-color: white;
+  padding: 0.8rem;
+  line-height: 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  text-align: left;
+  color: black;
+  max-width: 500px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse span {
+  text-align: right !important;
+}
+
+/* Choose Cats Section */
+section.choose-cats-section {
+  text-align: left;
+}
+
+/* Cat Chooser */
+.cat-chooser {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cat-chooser img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.cat-chooser img:hover {
+  border: 2px solid rgb(133, 96, 212);
+  filter: none;
+}
+
+.cat-chooser img.active {
+  filter: none;
+}
+
+/* Planning */
+section.planning {
+  margin-top: 3rem;
+}
+
+/* Heist in Process */
+section.heist-in-process h1 {
+  color: #76e895;
+}
+
+section.heist-in-process .process {
+  margin-top: 4rem;
+}
+
+.process > img {
+  margin-top: 4rem;
+  width: 600px !important;
+  height: auto;
+}
+
+/* Planning + Heist in Process [Common Elements] */
+section.planning div,
+section.heist-in-process > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+section.planning img,
+section.heist-in-process > div img {
+  width: 400px;
+  height: auto;
+}
+
+section.planning span,
+section.heist-in-process > div span {
+  max-width: 600px;
+  text-align: left;
+  font-size: 24px;
+}
+
+/* Video Popup */
+#video_popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
