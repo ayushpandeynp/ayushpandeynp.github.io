@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Panic";
-  src: url("/fonts/panic.otf") format("opentype");
+  src: url("../fonts/panic.otf") format("opentype");
 }
 
 html,
