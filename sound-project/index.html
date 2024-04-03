@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 Candles</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <span id="timer"></span>
+    <!-- 12 Candles INTRO BANNER -->
+    <div class="candles_bg">
+      <div class="blur"></div>
+      <div class="main_title">12 Candles</div>
+
+      <button class="start_button" id="begin">BEGIN</button>
+    </div>
+
+    <div id="iframe_container">
+      <iframe src="pages/one.html" id="iframe_element"></iframe>
+    </div>
+
+    <div id="interactive_container">
+      <span
+        >Drag all the items from the side bar and place on the rug to
+        continue.</span
+      >
+
+      <button class="next_button" id="continue">CONTINUE</button>
+
+      <div id="interactive">
+        <div id="canvas">
+          <img src="img/item_rug.png" id="item_rug" />
+          <img src="img/item_bread.png" id="item_bread" />
+          <img src="img/item_candles.png" id="item_candle" />
+          <img src="img/item_knife.png" id="item_knife" />
+          <img src="img/item_matchsticks.png" id="item_matchsticks" />
+          <img src="img/item_ropes.png" id="item_ropes" />
+        </div>
+
+        <div id="sidebar">
+          <img src="img/icons/bread.png" />
+          <img src="img/icons/candle.png" />
+          <img src="img/icons/matchsticks.png" />
+          <img src="img/icons/ropes.png" />
+          <img src="img/icons/knife.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="candles_horizontal">
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+      <img src="img/lit-candle.png" />
+    </div>
+
+    <!-- script -->
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
