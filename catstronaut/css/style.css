@@ -1,0 +1,127 @@
+/* General styles for the body and sections */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Conthrax";
+  src: url("../fonts/conthrax-sb.otf") format("opentype");
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  color: white;
+  font-family: "Conthrax", sans-serif;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/background.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Each section except .comic_mid takes up 100vh */
+.banner,
+.comic_top,
+.comic_end,
+.the_end {
+  height: 100vh;
+}
+
+/* The .comic_mid section takes up 150vh */
+.comic_mid {
+  height: 150vh;
+}
+
+/* Additional styling for content within sections */
+section h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+section img {
+  display: none;
+  width: auto;
+  height: 300px;
+  border: solid 2px white;
+  z-index: 999;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 2rem;
+  background-color: #161a23;
+  border: solid 1px #84cee0;
+  color: white;
+  min-width: 100px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #84cee0;
+  color: #161a23;
+}
+
+.active {
+  display: block;
+}
+
+.one {
+  position: absolute;
+  top: 38%;
+  left: 10%;
+}
+
+.two {
+  position: absolute;
+  top: 38%;
+  left: 37.5%;
+}
+
+.three {
+  position: absolute;
+  top: 38%;
+  right: 10%;
+}
+
+.four {
+  position: absolute;
+  top: none;
+  left: none;
+  width: 400px;
+  height: auto;
+  border: none;
+}
+
+.five {
+  position: absolute;
+  height: 350px;
+  top: 38%;
+  left: 17%;
+}
+
+.six {
+  position: absolute;
+  height: 350px;
+  top: 38%;
+  left: 53%;
+}
